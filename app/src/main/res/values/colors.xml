@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#E04242</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#E04242</color>
     <color name="vermelho">#E04242</color>
     <color name="vermelho_escuro">#4E1616</color>
 </resources>

@@ -1,79 +1,42 @@
 {
   "project_info": {
-    "project_number": "1072044006500",
-    "firebase_url": "https://portalaplus.firebaseio.com",
-    "project_id": "portalaplus",
-    "storage_bucket": "portalaplus.appspot.com"
+    "project_number": "312678000620",
+    "firebase_url": "https://portala-7c09a.firebaseio.com",
+    "project_id": "portala-7c09a",
+    "storage_bucket": "portala-7c09a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1072044006500:android:7a0b216d852fa384015371",
+        "mobilesdk_app_id": "1:312678000620:android:4369b7679d72f4cca502c9",
         "android_client_info": {
           "package_name": "com.example.portalamais"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1072044006500-5e3c224krr621o0ksb737s5f3c9nr0u8.apps.googleusercontent.com",
+          "client_id": "312678000620-ud0ecbkc7579jm02go6tik56mbefv2h8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.portalamais",
-            "certificate_hash": "f36e4a2fda5bdc739b659d3e6d4b688e774d9420"
+            "certificate_hash": "568fa2357dbc4ccf4ee8d6433b0ab33aed4d45dc"
           }
         },
         {
-          "client_id": "1072044006500-m6fi7v0hnt3cc5kc4q3bg0kar1m17mcv.apps.googleusercontent.com",
+          "client_id": "312678000620-798oiegh12dsngpd3733itvn2thgtb4f.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDE0A5hhfVvkHRB0U20h1NbtwiqYpaFtb4"
+          "current_key": "AIzaSyBA3J7aOjTM9vn_dIgtmCtFOkFuFSlqSr8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1072044006500-m6fi7v0hnt3cc5kc4q3bg0kar1m17mcv.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1072044006500:android:70425d72cd72baab015371",
-        "android_client_info": {
-          "package_name": "com.example.portalaplus"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1072044006500-gllp4e488uanrfrqefpq0iimg7usgu6e.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.portalaplus",
-            "certificate_hash": "f36e4a2fda5bdc739b659d3e6d4b688e774d9420"
-          }
-        },
-        {
-          "client_id": "1072044006500-m6fi7v0hnt3cc5kc4q3bg0kar1m17mcv.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDE0A5hhfVvkHRB0U20h1NbtwiqYpaFtb4"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1072044006500-m6fi7v0hnt3cc5kc4q3bg0kar1m17mcv.apps.googleusercontent.com",
+              "client_id": "312678000620-798oiegh12dsngpd3733itvn2thgtb4f.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
