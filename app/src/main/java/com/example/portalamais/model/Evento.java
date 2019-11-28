@@ -2,26 +2,44 @@ package com.example.portalamais.model;
 
 public class Evento {
 
-    private String id;
-    private String titulo;
-    private String descricao;
+    private String idEvento;
+    private String tituloEvento = "Primeiro Evento da Instituição";
+    private String descricaoEvento;
     private Instituicao instituicao;
 
-    public Evento(){
-        this.instituicao  = new Instituicao();
-
-    }
-    public void cadastrar(){
-
-    }
-    public void alterar(){
-
-    }
-    public void remover(){
-
+    public Evento() {
+        this.instituicao = new Instituicao();
     }
 
-    public String listar(String lista){
-        return lista;
+    public String getIdEvento() {
+        return idEvento;
+    }
+
+    public void setIdEvento(String idEvento) {
+        this.idEvento = idEvento;
+    }
+
+    public String getTituloEvento() {
+        return tituloEvento;
+    }
+
+    public void setTituloEvento(String tituloEvento) {
+        this.tituloEvento = tituloEvento;
+    }
+
+    public String getDescricaoEvento() {
+        return descricaoEvento;
+    }
+
+    public void setDescricaoEvento(String descricaoEvento) {
+        this.descricaoEvento = descricaoEvento;
+    }
+
+    public Instituicao getInstituicao() {
+        return instituicao;
+    }
+
+    public void setInstituicao(Instituicao instituicao) {
+        this.instituicao = instituicao;
     }
 }

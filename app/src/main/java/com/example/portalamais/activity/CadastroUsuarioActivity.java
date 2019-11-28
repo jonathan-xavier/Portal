@@ -11,11 +11,12 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.portalamais.model.Instituicao;
 import com.example.portalamais.model.Responsavel;
+
 import com.example.portalamais.R;
 import com.example.portalamais.helper.ConfigFirebase;
+import com.example.portalamais.model.Responsavel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -76,8 +77,11 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
                                         if (task.isSuccessful()) {
 
                                             //atribuindo email e senha ao objeto Instituição.
-                                            instituicao.setEmail(email);
-                                            instituicao.setSenha(senha);
+
+                                            instituicao.setEmailAdministracao(email);
+                                            instituicao.setSenhaAdministracao(senha);
+
+
 
 
                                             //enviar usuario para tela principal
@@ -112,9 +116,6 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
 
                                 //cadastro responsavel
 
-
-
-
                             //se estiver preenchido fazer autenticacão.
                             autenticacao.createUserWithEmailAndPassword(
                                     email, senha
@@ -124,8 +125,8 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
                                     if (task.isSuccessful()) {
 
                                         //atribuindo email e senha ao objeto Responsável.
-                                        responsavel.setEmail(email);
-                                        responsavel.setSenha(senha);
+                                        responsavel.setEmailResponsavel(email);
+                                        responsavel.setSenhaResponsavel(senha);
 
 
                                         //enviar usuario para tela principal
@@ -175,6 +176,7 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
         campoSenha = findViewById(R.id.editLoginSenha);
         campoEmail = findViewById(R.id.editLoginEmail);
         tipoAcesso = findViewById(R.id.switchCadastro);
+
         voltarLogin = findViewById(R.id.textViewVoltarParaLogin);
         responsavel = new Responsavel();
         instituicao  = new Instituicao();

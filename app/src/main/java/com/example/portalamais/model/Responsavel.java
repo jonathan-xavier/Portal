@@ -1,70 +1,71 @@
 package com.example.portalamais.model;
 
+import java.util.ArrayList;
+
 public class Responsavel {
-    private String id;
-    private String nome;
 
-    public String getId() {
-        return id;
+    private String idResponsavel = "68TyuIHg";
+    private String nomeResponsavel = "Melo";
+    private String senhaResponsavel = "responsavel";
+    private String emailResponsavel = "responsavel@gmail.com";
+    private String fotoResponsavel;
+    private ArrayList<Aluno> aluno;
+    private Instituicao instituicao;
+
+    public Responsavel() {
+        this.aluno = new ArrayList<>();
+        this.instituicao = new Instituicao();
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public String getIdResponsavel() {
+        return idResponsavel;
     }
 
-    public String getNome() {
-        return nome;
+    public void setIdResponsavel(String idResponsavel) {
+        this.idResponsavel = idResponsavel;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String getNomeResponsavel() {
+        return nomeResponsavel;
     }
 
-    public String getSenha() {
-        return senha;
+    public void setNomeResponsavel(String nomeResponsavel) {
+        this.nomeResponsavel = nomeResponsavel;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public String getSenhaResponsavel() {
+        return senhaResponsavel;
     }
 
-    public String getEmail() {
-        return email;
+    public void setSenhaResponsavel(String senhaResponsavel) {
+        this.senhaResponsavel = senhaResponsavel;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getEmailResponsavel() {
+        return emailResponsavel;
     }
 
-    public String getFoto() {
-        return foto;
+    public void setEmailResponsavel(String emailResponsavel) {
+        this.emailResponsavel = emailResponsavel;
     }
 
-    public void setFoto(String foto) {
-        this.foto = foto;
+    public String getFotoResponsavel() {
+        return fotoResponsavel;
     }
 
-    private String senha;
-    private String email;
-    private String foto;
-    //falta list de alunos e obj instituicao
-
-    public Responsavel(){
-
+    public void setFotoResponsavel(String fotoResponsavel) {
+        this.fotoResponsavel = fotoResponsavel;
     }
 
-    public void cadastrar(){
-
-    }
-    public void alterar(){
-
-    }
-    public void remover(){
-
+    public ArrayList<Aluno> getAluno() {
+        return aluno;
     }
 
-    public String listar(String lista){
-        return  lista;
+    public Instituicao getInstituicao() {
+        return instituicao;
     }
 
+    public void setInstituicao(Instituicao instituicao) {
+        this.instituicao = instituicao;
+    }
 }

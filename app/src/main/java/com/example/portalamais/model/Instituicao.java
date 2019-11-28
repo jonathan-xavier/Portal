@@ -1,29 +1,57 @@
 package com.example.portalamais.model;
 
+
+import java.util.ArrayList;
+
 public class Instituicao {
 
-    private String email;
+    private String idAdministracao;
+    private String emailAdministracao;
+    private String senhaAdministracao;
+    private ArrayList<Responsavel> responsavel;
+    private ArrayList<Evento> evento;
+    private ArrayList<Aluno> aluno;
 
-    public String getEmail() {
-        return email;
+    public Instituicao() {
+        this.responsavel = new ArrayList<>();
+        this.evento = new ArrayList<>();
+        this.aluno = new ArrayList<>();
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getIdAdministracao() {
+        return idAdministracao;
     }
 
-    public String getSenha() {
-        return senha;
+    public void setIdAdministracao(String idAdministracao) {
+        this.idAdministracao = idAdministracao;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public String getEmailAdministracao() {
+        return emailAdministracao;
     }
 
-    private String senha;
+    public void setEmailAdministracao(String emailAdministracao) {
+        this.emailAdministracao = emailAdministracao;
+    }
 
-    public Instituicao(){
+    public String getSenhaAdministracao() {
+        return senhaAdministracao;
+    }
 
+    public void setSenhaAdministracao(String senhaAdministracao) {
+        this.senhaAdministracao = senhaAdministracao;
+    }
+
+    public ArrayList<Responsavel> getResponsavel() {
+        return responsavel;
+    }
+
+    public ArrayList<Evento> getEvento() {
+        return evento;
+    }
+
+    public ArrayList<Aluno> getAluno() {
+        return aluno;
     }
 
 
