@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.NotaInstituicaoActivity"></activity>
+        <activity android:name=".activity.NotaInstituicaoActivity" />
         <activity android:name=".activity.DisciplinaInstituicaoActivity" />
         <activity android:name=".activity.TurmaInstituicaoActivity" />
         <activity android:name=".activity.EventoInstituicaoActivity" />
@@ -19,7 +19,9 @@
         <activity android:name=".activity.CadastroUsuarioActivity" />
         <activity android:name=".activity.HomeUsuarioActivity" />
         <activity android:name=".activity.LoginAutenticacaoActivity" />
-        <activity android:name=".activity.SplashActivity">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

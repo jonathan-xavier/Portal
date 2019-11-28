@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/logomenor" />
 
     <EditText
-        android:id="@+id/editLoginEmail"
+        android:id="@+id/editCadastroEmail"
         android:layout_width="301dp"
         android:layout_height="45dp"
         android:layout_marginTop="15dp"
@@ -28,7 +28,7 @@
         android:paddingRight="16dp" />
 
     <EditText
-        android:id="@+id/editLoginSenha"
+        android:id="@+id/editCadastroSenha"
         android:layout_width="301dp"
         android:layout_height="45dp"
         android:layout_marginLeft="15dp"
@@ -49,7 +49,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textViewCadastroUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Usuário" />
@@ -60,15 +60,15 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textViewCadastroInstituicao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Responsável" />
+            android:text="Instituição" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/buttonLoginLogar"
+        android:id="@+id/buttonCadastroLogar"
         android:layout_width="301dp"
         android:layout_height="45dp"
         android:layout_marginTop="25dp"

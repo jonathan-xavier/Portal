@@ -58,14 +58,10 @@ public class LoginAutenticacaoActivity extends AppCompatActivity {
                             if(tipoAcesso.isChecked()){
                                 //login de Instituicao
 
-
-
                             }else {
                                 //login de usuario
 
-
                                 //se correto enviar para home
-
                                 autenticacao.signInWithEmailAndPassword(
                                         email, senha
                                 ).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -73,22 +69,17 @@ public class LoginAutenticacaoActivity extends AppCompatActivity {
                                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                                         if (task.isSuccessful()) {
-
                                             //se logado com sucesso
                                             Toast.makeText(LoginAutenticacaoActivity.this,
                                                     "Logado com sucesso!", Toast.LENGTH_SHORT).show();
                                             String tipoUsuario = getTipoUsuario();
                                             UsuarioFirebase.atualizarTipoUsuario(tipoUsuario);
-                                                abrirTelaPrincipal(tipoUsuario);
-
-
+                                            abrirTelaPrincipal(tipoUsuario);
                                         } else {
-
                                             //se não passar
                                             Toast.makeText(LoginAutenticacaoActivity.this,
                                                     "Email ou senha incorretos! : " + task.getException(),
                                                     Toast.LENGTH_SHORT).show();
-
                                         }
                                     }
                                 });
@@ -106,6 +97,12 @@ public class LoginAutenticacaoActivity extends AppCompatActivity {
             }
         });
 
+        criarConta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), CadastroUsuarioActivity.class));
+            }
+        });
 
     }
     private String getTipoUsuario(){
@@ -124,7 +121,7 @@ public class LoginAutenticacaoActivity extends AppCompatActivity {
     private void abrirTelaPrincipal(String tipoUsuario){
 
         if(tipoUsuario.equals("I")){//intituicao
-            startActivity(new Intent(getApplicationContext(), HomeUsuarioActivity.class));
+            startActivity(new Intent(getApplicationContext(), HomeInstituicaoActivity.class));
         }else{//usuario
             startActivity(new Intent(getApplicationContext(), HomeUsuarioActivity.class));
         }
@@ -136,7 +133,5 @@ public class LoginAutenticacaoActivity extends AppCompatActivity {
         botaoLogar = findViewById(R.id.buttonLoginLogar);
         criarConta = findViewById(R.id.textViewCriarConta);
         tipoAcesso = findViewById(R.id.switchLogar);
-
-
     }
 }
