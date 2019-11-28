@@ -23,7 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 
-public class Login_autenticacaoActivity extends AppCompatActivity {
+public class LoginAutenticacaoActivity extends AppCompatActivity {
 
     private Button botaoLogar;
     private EditText campoEmail,campoSenha;
@@ -75,7 +75,7 @@ public class Login_autenticacaoActivity extends AppCompatActivity {
                                         if (task.isSuccessful()) {
 
                                             //se logado com sucesso
-                                            Toast.makeText(Login_autenticacaoActivity.this,
+                                            Toast.makeText(LoginAutenticacaoActivity.this,
                                                     "Logado com sucesso!", Toast.LENGTH_SHORT).show();
                                             String tipoUsuario = getTipoUsuario();
                                             UsuarioFirebase.atualizarTipoUsuario(tipoUsuario);
@@ -85,7 +85,7 @@ public class Login_autenticacaoActivity extends AppCompatActivity {
                                         } else {
 
                                             //se não passar
-                                            Toast.makeText(Login_autenticacaoActivity.this,
+                                            Toast.makeText(LoginAutenticacaoActivity.this,
                                                     "Email ou senha incorretos! : " + task.getException(),
                                                     Toast.LENGTH_SHORT).show();
 
@@ -95,11 +95,11 @@ public class Login_autenticacaoActivity extends AppCompatActivity {
                             }//----------------------fim do se switch-------------------------------
 
                 }else{
-                    Toast.makeText(Login_autenticacaoActivity.this,"Senha não preenchida",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginAutenticacaoActivity.this,"Senha não preenchida",Toast.LENGTH_SHORT).show();
                 }
 
                 }else{
-                    Toast.makeText(Login_autenticacaoActivity.this,"Email não preenchido",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginAutenticacaoActivity.this,"Email não preenchido",Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -124,9 +124,9 @@ public class Login_autenticacaoActivity extends AppCompatActivity {
     private void abrirTelaPrincipal(String tipoUsuario){
 
         if(tipoUsuario.equals("I")){//intituicao
-            startActivity(new Intent(getApplicationContext(), Home_InstituicaoActivity.class));
+            startActivity(new Intent(getApplicationContext(), HomeInstituicaoActivity.class));
         }else{//usuario
-            startActivity(new Intent(getApplicationContext(), Home_usuarioActivity.class));
+            startActivity(new Intent(getApplicationContext(), HomeUsuarioActivity.class));
         }
     }
 

@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.Home_InstituicaoActivity"></activity>
+        <activity android:name=".activity.HomeInstituicaoActivity"></activity>
         <activity android:name=".activity.BemVindoActivity" />
-        <activity android:name=".activity.Cadastro_usuario_instituicaoActivity" />
-        <activity android:name=".activity.Home_usuarioActivity" />
-        <activity android:name=".activity.Login_autenticacaoActivity" />
+        <activity android:name=".activity.CadastroUsuarioInstituicaoActivity" />
+        <activity android:name=".activity.HomeUsuarioActivity" />
+        <activity android:name=".activity.LoginAutenticacaoActivity" />
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -26,14 +26,14 @@ public class BemVindoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(), Cadastro_usuario_instituicaoActivity.class));
+                startActivity(new Intent(getApplicationContext(), CadastroUsuarioInstituicaoActivity.class));
             }
         });
 
         logar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), Login_autenticacaoActivity.class));
+                startActivity(new Intent(getApplicationContext(), LoginAutenticacaoActivity.class));
             }
         });
 

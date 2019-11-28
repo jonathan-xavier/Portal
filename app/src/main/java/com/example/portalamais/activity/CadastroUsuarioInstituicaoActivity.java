@@ -23,7 +23,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
-public class Cadastro_usuario_instituicaoActivity extends AppCompatActivity {
+public class CadastroUsuarioInstituicaoActivity extends AppCompatActivity {
 
 
     private Button botaoLogar;
@@ -73,9 +73,9 @@ public class Cadastro_usuario_instituicaoActivity extends AppCompatActivity {
 
 
                                             //enviar usuario para tela principal
-                                            Toast.makeText(Cadastro_usuario_instituicaoActivity.this, "Cadastro realizado com sucesso!",
+                                            Toast.makeText(CadastroUsuarioInstituicaoActivity.this, "Cadastro realizado com sucesso!",
                                                     Toast.LENGTH_SHORT).show();
-                                            startActivity(new Intent(getApplicationContext(), Home_InstituicaoActivity.class));
+                                            startActivity(new Intent(getApplicationContext(), HomeInstituicaoActivity.class));
                                         } else {
                                             String erroExcecao = "";
 
@@ -120,9 +120,9 @@ public class Cadastro_usuario_instituicaoActivity extends AppCompatActivity {
 
 
                                         //enviar usuario para tela principal
-                                        Toast.makeText(Cadastro_usuario_instituicaoActivity.this, "Cadastro realizado com sucesso!",
+                                        Toast.makeText(CadastroUsuarioInstituicaoActivity.this, "Cadastro realizado com sucesso!",
                                                 Toast.LENGTH_SHORT).show();
-                                        startActivity(new Intent(getApplicationContext(), Home_usuarioActivity.class));
+                                        startActivity(new Intent(getApplicationContext(), HomeUsuarioActivity.class));
                                     } else {
                                         String erroExcecao = "";
 
@@ -149,10 +149,10 @@ public class Cadastro_usuario_instituicaoActivity extends AppCompatActivity {
                         }//---------------fim do se do switch----------------------
 
                         }else{
-                            Toast.makeText(Cadastro_usuario_instituicaoActivity.this,"Insira a Senha",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CadastroUsuarioInstituicaoActivity.this,"Insira a Senha",Toast.LENGTH_SHORT).show();
                         }
                     }else{
-                        Toast.makeText(Cadastro_usuario_instituicaoActivity.this,"Insira o Email",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CadastroUsuarioInstituicaoActivity.this,"Insira o Email",Toast.LENGTH_SHORT).show();
                     }
                 }
             });

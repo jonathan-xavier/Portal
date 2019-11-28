@@ -7,7 +7,7 @@
     android:background="@android:color/white"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activity.Cadastro_usuario_instituicaoActivity">
+    tools:context=".activity.CadastroUsuarioInstituicaoActivity">
 
     <ImageView
         android:id="@+id/imageView2"
