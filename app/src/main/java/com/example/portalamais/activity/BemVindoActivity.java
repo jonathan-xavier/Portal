@@ -26,7 +26,8 @@ public class BemVindoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(), CadastroUsuarioInstituicaoActivity.class));
+                startActivity(new Intent(getApplicationContext(), CadastroUsuarioActivity.class));
+
             }
         });
 

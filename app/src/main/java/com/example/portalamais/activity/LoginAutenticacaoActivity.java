@@ -125,6 +125,7 @@ public class LoginAutenticacaoActivity extends AppCompatActivity {
 
         if(tipoUsuario.equals("I")){//intituicao
             startActivity(new Intent(getApplicationContext(), HomeInstituicaoActivity.class));
+
         }else{//usuario
             startActivity(new Intent(getApplicationContext(), HomeUsuarioActivity.class));
         }
@@ -133,7 +134,7 @@ public class LoginAutenticacaoActivity extends AppCompatActivity {
     private void inicializarComponentes(){
         campoEmail = findViewById(R.id.editLoginEmail);
         campoSenha = findViewById(R.id.editLoginSenha);
-        botaoLogar = findViewById(R.id.buttonLoginLogar);
+        botaoLogar = findViewById(R.id.buttonCadastrarCadastrar);
         criarConta = findViewById(R.id.textViewCriarConta);
         tipoAcesso = findViewById(R.id.switchLogar);
 

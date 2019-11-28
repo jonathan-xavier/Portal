@@ -9,10 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.portalamais.Class.Instituicao;
-import com.example.portalamais.Class.Responsavel;
+import com.example.portalamais.model.Instituicao;
+import com.example.portalamais.model.Responsavel;
 import com.example.portalamais.R;
 import com.example.portalamais.helper.ConfigFirebase;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -23,29 +24,36 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
-public class CadastroUsuarioInstituicaoActivity extends AppCompatActivity {
+public class CadastroUsuarioActivity extends AppCompatActivity {
 
 
-    private Button botaoLogar;
+    private Button botaoCadastrar;
     private EditText campoSenha;
     private EditText campoEmail;
     private FirebaseAuth autenticacao;
     private Responsavel responsavel;
-    private Instituicao instituicao;
     private Switch tipoAcesso;
+    private Instituicao instituicao;
+    private TextView voltarLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_cadastro_usuario_instituicao);
+        setContentView(R.layout.activity_cadastro_usuario);
         inicializarComponentes();
 
 
+        voltarLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),LoginAutenticacaoActivity.class));
+            }
+        });
 
         autenticacao = ConfigFirebase.getFirebaseAutenticacao();
 
 
-            botaoLogar.setOnClickListener(new View.OnClickListener() {
+            botaoCadastrar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     final String email  = campoEmail.getText().toString();
@@ -73,7 +81,7 @@ public class CadastroUsuarioInstituicaoActivity extends AppCompatActivity {
 
 
                                             //enviar usuario para tela principal
-                                            Toast.makeText(CadastroUsuarioInstituicaoActivity.this, "Cadastro realizado com sucesso!",
+                                            Toast.makeText(CadastroUsuarioActivity.this, "Cadastro realizado com sucesso!",
                                                     Toast.LENGTH_SHORT).show();
                                             startActivity(new Intent(getApplicationContext(), HomeInstituicaoActivity.class));
                                         } else {
@@ -101,7 +109,8 @@ public class CadastroUsuarioInstituicaoActivity extends AppCompatActivity {
 
 
                             } else {
-                                //cadastro usuario
+
+                                //cadastro responsavel
 
 
 
@@ -120,7 +129,7 @@ public class CadastroUsuarioInstituicaoActivity extends AppCompatActivity {
 
 
                                         //enviar usuario para tela principal
-                                        Toast.makeText(CadastroUsuarioInstituicaoActivity.this, "Cadastro realizado com sucesso!",
+                                        Toast.makeText(CadastroUsuarioActivity.this, "Cadastro realizado com sucesso!",
                                                 Toast.LENGTH_SHORT).show();
                                         startActivity(new Intent(getApplicationContext(), HomeUsuarioActivity.class));
                                     } else {
@@ -149,23 +158,26 @@ public class CadastroUsuarioInstituicaoActivity extends AppCompatActivity {
                         }//---------------fim do se do switch----------------------
 
                         }else{
-                            Toast.makeText(CadastroUsuarioInstituicaoActivity.this,"Insira a Senha",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CadastroUsuarioActivity.this,"Insira a Senha",Toast.LENGTH_SHORT).show();
                         }
                     }else{
-                        Toast.makeText(CadastroUsuarioInstituicaoActivity.this,"Insira o Email",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CadastroUsuarioActivity.this,"Insira o Email",Toast.LENGTH_SHORT).show();
                     }
                 }
             });
     }
 
+    //voltar login
+
     //autenticar os dados
     private void inicializarComponentes(){
-        botaoLogar = findViewById(R.id.buttonLoginLogar);
+        botaoCadastrar = findViewById(R.id.buttonCadastroCadastrar);
         campoSenha = findViewById(R.id.editLoginSenha);
         campoEmail = findViewById(R.id.editLoginEmail);
-        tipoAcesso = findViewById(R.id.switchLogar);
+        tipoAcesso = findViewById(R.id.switchCadastro);
+        voltarLogin = findViewById(R.id.textViewVoltarParaLogin);
         responsavel = new Responsavel();
-        instituicao = new Instituicao();
+        instituicao  = new Instituicao();
 
     }
 }

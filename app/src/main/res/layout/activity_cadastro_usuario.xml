@@ -7,7 +7,9 @@
     android:background="@android:color/white"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activity.CadastroUsuarioInstituicaoActivity">
+
+    tools:context=".activity.CadastroUsuarioActivity">
+
 
     <ImageView
         android:id="@+id/imageView2"
@@ -68,7 +70,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/buttonLoginLogar"
+        android:id="@+id/buttonCadastroCadastrar"
         android:layout_width="301dp"
         android:layout_height="45dp"
         android:layout_marginTop="25dp"
@@ -82,6 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:gravity="center"
+        android:onClick="voltarParaLogin"
         android:text="Voltar para Login"
         android:textColor="@color/colorPrimaryDark" />
 
