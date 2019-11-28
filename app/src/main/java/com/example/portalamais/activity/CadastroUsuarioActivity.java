@@ -11,8 +11,7 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.example.portalamais.Class.Instituicao;
-import com.example.portalamais.Class.Responsavel;
+import com.example.portalamais.model.Responsavel;
 import com.example.portalamais.R;
 import com.example.portalamais.helper.ConfigFirebase;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -23,7 +22,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
-public class Cadastro_usuario_instituicaoActivity extends AppCompatActivity {
+public class CadastroUsuarioActivity extends AppCompatActivity {
 
 
     private Button botaoLogar;
@@ -31,13 +30,12 @@ public class Cadastro_usuario_instituicaoActivity extends AppCompatActivity {
     private EditText campoEmail;
     private FirebaseAuth autenticacao;
     private Responsavel responsavel;
-    private Instituicao instituicao;
     private Switch tipoAcesso;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_cadastro_usuario_instituicao);
+        setContentView(R.layout.activity_cadastro_usuario);
         inicializarComponentes();
 
 
@@ -68,14 +66,14 @@ public class Cadastro_usuario_instituicaoActivity extends AppCompatActivity {
                                         if (task.isSuccessful()) {
 
                                             //atribuindo email e senha ao objeto Instituição.
-                                            instituicao.setEmail(email);
-                                            instituicao.setSenha(senha);
+                                            responsavel.setEmail(email);
+                                            responsavel.setSenha(senha);
 
 
                                             //enviar usuario para tela principal
-                                            Toast.makeText(Cadastro_usuario_instituicaoActivity.this, "Cadastro realizado com sucesso!",
+                                            Toast.makeText(CadastroUsuarioActivity.this, "Cadastro realizado com sucesso!",
                                                     Toast.LENGTH_SHORT).show();
-                                            startActivity(new Intent(getApplicationContext(), Home_InstituicaoActivity.class));
+                                            startActivity(new Intent(getApplicationContext(), HomeUsuarioActivity.class));
                                         } else {
                                             String erroExcecao = "";
 
@@ -120,9 +118,9 @@ public class Cadastro_usuario_instituicaoActivity extends AppCompatActivity {
 
 
                                         //enviar usuario para tela principal
-                                        Toast.makeText(Cadastro_usuario_instituicaoActivity.this, "Cadastro realizado com sucesso!",
+                                        Toast.makeText(CadastroUsuarioActivity.this, "Cadastro realizado com sucesso!",
                                                 Toast.LENGTH_SHORT).show();
-                                        startActivity(new Intent(getApplicationContext(), Home_usuarioActivity.class));
+                                        startActivity(new Intent(getApplicationContext(), HomeUsuarioActivity.class));
                                     } else {
                                         String erroExcecao = "";
 
@@ -149,10 +147,10 @@ public class Cadastro_usuario_instituicaoActivity extends AppCompatActivity {
                         }//---------------fim do se do switch----------------------
 
                         }else{
-                            Toast.makeText(Cadastro_usuario_instituicaoActivity.this,"Insira a Senha",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CadastroUsuarioActivity.this,"Insira a Senha",Toast.LENGTH_SHORT).show();
                         }
                     }else{
-                        Toast.makeText(Cadastro_usuario_instituicaoActivity.this,"Insira o Email",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CadastroUsuarioActivity.this,"Insira o Email",Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -165,7 +163,6 @@ public class Cadastro_usuario_instituicaoActivity extends AppCompatActivity {
         campoEmail = findViewById(R.id.editLoginEmail);
         tipoAcesso = findViewById(R.id.switchLogar);
         responsavel = new Responsavel();
-        instituicao = new Instituicao();
 
     }
 }

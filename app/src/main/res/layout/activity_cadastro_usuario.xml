@@ -7,7 +7,7 @@
     android:background="@android:color/white"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activity.Cadastro_usuario_instituicaoActivity">
+    tools:context=".activity.CadastroUsuarioActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -63,7 +63,7 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Instituição" />
+            android:text="Responsável" />
 
     </LinearLayout>
 

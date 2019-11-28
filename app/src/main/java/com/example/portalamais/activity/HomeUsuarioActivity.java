@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.portalamais.R;
 
-public class Home_InstituicaoActivity extends AppCompatActivity {
+public class HomeUsuarioActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home__instituicao);
+        setContentView(R.layout.activity_home_usuario);
     }
 }

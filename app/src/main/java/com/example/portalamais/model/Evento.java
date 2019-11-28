@@ -1,4 +1,4 @@
-package com.example.portalamais.Class;
+package com.example.portalamais.model;
 
 public class Evento {
 
