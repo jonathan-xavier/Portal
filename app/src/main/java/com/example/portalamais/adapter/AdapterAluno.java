@@ -1,8 +1,10 @@
 package com.example.portalamais.adapter;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,47 +14,40 @@ import com.example.portalamais.R;
 import com.example.portalamais.model.Aluno;
 import com.example.portalamais.R;
 
-public class AdapterAluno extends RecyclerView.Adapter<AdapterAluno.MyViewHolder> {
+import java.util.ArrayList;
+import java.util.List;
 
-    @NonNull
-    @Override
-    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+public class AdapterAluno extends ArrayAdapter {
 
-        View itemLista = LayoutInflater.from(parent.getContext()).inflate(
-                R.layout.adapter_lista_aluno, parent, false
-        );
+    List<Aluno> lista;
+    TextView matriculaAluno,nomeAluno,labelMatriculaAluno,labelNomeAluno;
 
-        return new MyViewHolder(itemLista);
+    public AdapterAluno(Context context,List<Aluno> dados){
+
+        super(context, R.layout.adapter_lista_aluno,dados);
+
+        lista = dados;
+
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Aluno aluno = new Aluno();
-        holder.idAluno.setText(aluno.getIdAluno());
-        holder.nomeAluno.setText(aluno.getNomeAluno());
-        holder.labelIdAluno.getText();
-        holder.labelNomeAluno.getText();
-    }
+    public View getView(int position, View convertView, ViewGroup parent) {
 
-    @Override
-    public int getItemCount() {
-        return 1;
-    }
+        LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-    public class MyViewHolder extends RecyclerView.ViewHolder{
+        View v = inflater.inflate(R.layout.adapter_lista_aluno,null);
 
-        TextView idAluno;
-        TextView nomeAluno;
-        TextView labelIdAluno;
-        TextView labelNomeAluno;
+        matriculaAluno = v.findViewById(R.id.textViewMatriculaAluno);
+        nomeAluno = v.findViewById(R.id.textViewNomeAluno);
+        labelMatriculaAluno = v.findViewById(R.id.textViewLabelMatriculaAluno);
+        labelNomeAluno = v.findViewById(R.id.textViewLabelMatriculaAluno);
 
-        public MyViewHolder(@NonNull View itemView) {
-            super(itemView);
-            idAluno = itemView.findViewById(R.id.textViewMatriculaAluno);
-            nomeAluno = itemView.findViewById(R.id.textViewNomeAluno);
-            labelIdAluno = itemView.findViewById(R.id.textViewLabelIdAluno);
-            labelNomeAluno = itemView.findViewById(R.id.textViewLabelNomeAluno);
-        }
+        matriculaAluno.setText(lista.get(position).getMatriculaAluno());
+        nomeAluno.setText(lista.get(position).getNomeAluno());
+        labelMatriculaAluno.getText();
+        labelNomeAluno.getText();
+
+        return v;
     }
 
 }

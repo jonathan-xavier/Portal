@@ -4,8 +4,9 @@ import java.util.ArrayList;
 
 public class Aluno {
 
-    private String idAluno = "iX64234";
-    private String nomeAluno = "João Carlos";
+    private String idAluno;
+    private String nomeAluno;
+    private int matriculaAluno;
     private Responsavel responsavel;
     private Turma turma;
     private Instituicao instituicao;
@@ -32,6 +33,14 @@ public class Aluno {
 
     public void setNomeAluno(String nomeAluno) {
         this.nomeAluno = nomeAluno;
+    }
+
+    public int getMatriculaAluno() {
+        return matriculaAluno;
+    }
+
+    public void setMatriculaAluno(int matriculaAluno) {
+        this.matriculaAluno = matriculaAluno;
     }
 
     public Responsavel getResponsavel() {
