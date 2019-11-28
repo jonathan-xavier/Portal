@@ -101,9 +101,6 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
                             } else {
                                 //cadastro usuario
 
-
-
-
                             //se estiver preenchido fazer autenticacão.
                             autenticacao.createUserWithEmailAndPassword(
                                     email, senha
@@ -161,7 +158,7 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
         botaoLogar = findViewById(R.id.buttonLoginLogar);
         campoSenha = findViewById(R.id.editLoginSenha);
         campoEmail = findViewById(R.id.editLoginEmail);
-        tipoAcesso = findViewById(R.id.switchLogar);
+        tipoAcesso = findViewById(R.id.switchCadastro);
         responsavel = new Responsavel();
 
     }
