@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.NotaInstituicaoActivity"></activity>
+        <activity android:name=".activity.DisciplinaInstituicaoActivity" />
+        <activity android:name=".activity.TurmaInstituicaoActivity" />
+        <activity android:name=".activity.EventoInstituicaoActivity" />
+        <activity android:name=".activity.AlunoInstituicaoActivity" />
+        <activity android:name=".activity.HomeInstituicaoActivity" />
         <activity android:name=".activity.BemVindoActivity" />
         <activity android:name=".activity.CadastroUsuarioActivity" />
         <activity android:name=".activity.HomeUsuarioActivity" />

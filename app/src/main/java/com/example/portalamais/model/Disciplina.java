@@ -4,26 +4,42 @@ import java.util.ArrayList;
 
 public class Disciplina {
 
-    private String id;
-    private String nome;
+    private String idDisciplina = "43VCcssd";
+    private String nomeDisciplina = "Português";
     private Nota nota;
     private ArrayList<Turma> turma;
 
-    public Disciplina(){
+    public Disciplina() {
         this.nota = new Nota();
         this.turma = new ArrayList<>();
     }
 
-    public void cadastrar(){
+    public String getIdDisciplina() {
+        return idDisciplina;
+    }
 
+    public void setIdDisciplina(String idDisciplina) {
+        this.idDisciplina = idDisciplina;
     }
-    public void alterar(){
 
+    public String getNomeDisciplina() {
+        return nomeDisciplina;
     }
-    public void remover(){
 
+    public void setNomeDisciplina(String nomeDisciplina) {
+        this.nomeDisciplina = nomeDisciplina;
     }
-    public String listar(String lista){
-        return lista;
+
+    public Nota getNota() {
+        return nota;
     }
+
+    public void setNota(Nota nota) {
+        this.nota = nota;
+    }
+
+    public ArrayList<Turma> getTurma() {
+        return turma;
+    }
+
 }

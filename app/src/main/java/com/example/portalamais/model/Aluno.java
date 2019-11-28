@@ -4,57 +4,62 @@ import java.util.ArrayList;
 
 public class Aluno {
 
-
-    private String nome;
-    private int ano;
+    private String idAluno = "iX64234";
+    private String nomeAluno = "João Carlos";
     private Responsavel responsavel;
-    //private Turma turma;
+    private Turma turma;
     private Instituicao instituicao;
-    private ArrayList<Nota> notas;
+    private ArrayList<Nota> nota;
 
-    private String id;
-
-
-    public Aluno(){
-       /* this.responsavel = new Responsavel();
-       // this.turma = new Turma();
+    public Aluno() {
+        this.responsavel = new Responsavel();
+        this.turma = new Turma();
         this.instituicao = new Instituicao();
-        this.notas = new ArrayList<>();*/
+        this.nota = new ArrayList<>();
     }
 
-
-    public String getNome() {
-        return nome;
+    public String getIdAluno() {
+        return idAluno;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setIdAluno(String idAluno) {
+        this.idAluno = idAluno;
     }
 
-    public int getAno() {
-        return ano;
+    public String getNomeAluno() {
+        return nomeAluno;
     }
 
-    public void setAno(int ano) {
-        this.ano = ano;
+    public void setNomeAluno(String nomeAluno) {
+        this.nomeAluno = nomeAluno;
     }
 
-
-
-
-
-
-
-    public void cadastrar(){
-
+    public Responsavel getResponsavel() {
+        return responsavel;
     }
-    public void alterar(){
 
+    public void setResponsavel(Responsavel responsavel) {
+        this.responsavel = responsavel;
     }
-    public void remover(){
 
+    public Turma getTurma() {
+        return turma;
     }
-    public String listar(String lista){
-        return lista;
+
+    public void setTurma(Turma turma) {
+        this.turma = turma;
     }
+
+    public Instituicao getInstituicao() {
+        return instituicao;
+    }
+
+    public void setInstituicao(Instituicao instituicao) {
+        this.instituicao = instituicao;
+    }
+
+    public ArrayList<Nota> getNota() {
+        return nota;
+    }
+
 }
