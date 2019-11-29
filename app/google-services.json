@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "312678000620",
-    "firebase_url": "https://portala-7c09a.firebaseio.com",
-    "project_id": "portala-7c09a",
-    "storage_bucket": "portala-7c09a.appspot.com"
+    "project_number": "1080636236029",
+    "firebase_url": "https://portal-a-95cbc.firebaseio.com",
+    "project_id": "portal-a-95cbc",
+    "storage_bucket": "portal-a-95cbc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:312678000620:android:4369b7679d72f4cca502c9",
+        "mobilesdk_app_id": "1:1080636236029:android:5e6720673d71deb1ae9e94",
         "android_client_info": {
-          "package_name": "com.example.portalamais"
+          "package_name": "com.example.portala"
         }
       },
       "oauth_client": [
         {
-          "client_id": "312678000620-ud0ecbkc7579jm02go6tik56mbefv2h8.apps.googleusercontent.com",
+          "client_id": "1080636236029-6m4edf1t2oi26k5nf3som91ikthjpmej.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.portalamais",
-            "certificate_hash": "568fa2357dbc4ccf4ee8d6433b0ab33aed4d45dc"
+            "package_name": "com.example.portala",
+            "certificate_hash": "4f27b6cdf7c82dd61de16d4916e1dbaa7442ea6e"
           }
         },
         {
-          "client_id": "312678000620-798oiegh12dsngpd3733itvn2thgtb4f.apps.googleusercontent.com",
+          "client_id": "1080636236029-rugf1osk12al4lk3d0douclpd4m781a2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBA3J7aOjTM9vn_dIgtmCtFOkFuFSlqSr8"
+          "current_key": "AIzaSyCpPQOfGpw-87ulpLCrQg4_MDG9vSJVaqE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "312678000620-798oiegh12dsngpd3733itvn2thgtb4f.apps.googleusercontent.com",
+              "client_id": "1080636236029-rugf1osk12al4lk3d0douclpd4m781a2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
