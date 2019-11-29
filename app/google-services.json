@@ -1,79 +1,42 @@
 {
   "project_info": {
-    "project_number": "1072044006500",
-    "firebase_url": "https://portalaplus.firebaseio.com",
-    "project_id": "portalaplus",
-    "storage_bucket": "portalaplus.appspot.com"
+    "project_number": "1080636236029",
+    "firebase_url": "https://portal-a-95cbc.firebaseio.com",
+    "project_id": "portal-a-95cbc",
+    "storage_bucket": "portal-a-95cbc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1072044006500:android:7a0b216d852fa384015371",
+        "mobilesdk_app_id": "1:1080636236029:android:5e6720673d71deb1ae9e94",
         "android_client_info": {
-          "package_name": "com.example.portalamais"
+          "package_name": "com.example.portala"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1072044006500-5e3c224krr621o0ksb737s5f3c9nr0u8.apps.googleusercontent.com",
+          "client_id": "1080636236029-6m4edf1t2oi26k5nf3som91ikthjpmej.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.portalamais",
-            "certificate_hash": "f36e4a2fda5bdc739b659d3e6d4b688e774d9420"
+            "package_name": "com.example.portala",
+            "certificate_hash": "4f27b6cdf7c82dd61de16d4916e1dbaa7442ea6e"
           }
         },
         {
-          "client_id": "1072044006500-m6fi7v0hnt3cc5kc4q3bg0kar1m17mcv.apps.googleusercontent.com",
+          "client_id": "1080636236029-rugf1osk12al4lk3d0douclpd4m781a2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDE0A5hhfVvkHRB0U20h1NbtwiqYpaFtb4"
+          "current_key": "AIzaSyCpPQOfGpw-87ulpLCrQg4_MDG9vSJVaqE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1072044006500-m6fi7v0hnt3cc5kc4q3bg0kar1m17mcv.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1072044006500:android:70425d72cd72baab015371",
-        "android_client_info": {
-          "package_name": "com.example.portalaplus"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1072044006500-gllp4e488uanrfrqefpq0iimg7usgu6e.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.portalaplus",
-            "certificate_hash": "f36e4a2fda5bdc739b659d3e6d4b688e774d9420"
-          }
-        },
-        {
-          "client_id": "1072044006500-m6fi7v0hnt3cc5kc4q3bg0kar1m17mcv.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDE0A5hhfVvkHRB0U20h1NbtwiqYpaFtb4"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1072044006500-m6fi7v0hnt3cc5kc4q3bg0kar1m17mcv.apps.googleusercontent.com",
+              "client_id": "1080636236029-rugf1osk12al4lk3d0douclpd4m781a2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
