@@ -11,6 +11,6 @@ public class EventoInstituicaoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_evento);
+        setContentView(R.layout.activity_evento_instituicao);
     }
 }
